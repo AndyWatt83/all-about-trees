@@ -1,0 +1,14 @@
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\tree-structure.tests.deps.json
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\tree-structure.tests.runtimeconfig.json
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\tree-structure.tests.runtimeconfig.dev.json
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\tree-structure.tests.dll
+C:\Development\tree-structures\test\tree-structure.tests\bin\Debug\netcoreapp2.1\tree-structure.tests.pdb
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.csprojAssemblyReference.cache
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.csproj.CoreCompileInputs.cache
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.AssemblyInfoInputs.cache
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.AssemblyInfo.cs
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.dll
+C:\Development\tree-structures\test\tree-structure.tests\obj\Debug\netcoreapp2.1\tree-structure.tests.pdb

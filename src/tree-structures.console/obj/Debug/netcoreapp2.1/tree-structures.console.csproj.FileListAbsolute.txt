@@ -1,0 +1,14 @@
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.console.deps.json
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.console.runtimeconfig.json
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.console.runtimeconfig.dev.json
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.console.dll
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.console.pdb
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.core.dll
+c:\Development\tree-structures\src\tree-structures.console\bin\Debug\netcoreapp2.1\tree-structures.core.pdb
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.csprojAssemblyReference.cache
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.csproj.CoreCompileInputs.cache
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.AssemblyInfoInputs.cache
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.AssemblyInfo.cs
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.csproj.CopyComplete
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.dll
+c:\Development\tree-structures\src\tree-structures.console\obj\Debug\netcoreapp2.1\tree-structures.console.pdb
