@@ -9,11 +9,27 @@ namespace tree_structures.core
     {
         public T NodeData { get; set; }
         public TreeNode<T> Parent { get; set; }
+
+        public int? ParentID
+        {
+            get
+            {
+                if(this.IsRoot)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Parent.ID;
+                }
+            }
+        }
         public ICollection<TreeNode<T>> Children {get; set; } = new List<TreeNode<T>>();
 
         public TreeNode(T nodeData)
         {
             this.NodeData = nodeData;
+            this.ID = TreeNode<T>.NextID;
         }
 
         public bool IsRoot { get { return this.Parent == null; } }
@@ -50,14 +66,14 @@ namespace tree_structures.core
         }
 
         // Filtering code
-        public static ICollection<Func<T, bool>> Filters { get; } = new List<Func<T, bool>>();
+        public ICollection<Func<T, bool>> Filters { get; } = new List<Func<T, bool>>();
 
         public bool FilterChildren{ get; } = true;
 
         public bool FilterResult()
         {
             var match = false;
-            foreach(var filter in TreeNode<T>.Filters)
+            foreach(var filter in this.Filters)
                 if(filter.Invoke(this.NodeData))
                     match = true;
 
@@ -68,5 +84,19 @@ namespace tree_structures.core
 
             return match;
         }
+
+        // ID Code for data binding
+
+        private static int nextID = -1;
+        public static int NextID
+        {
+            get
+            {
+                nextID += 1;
+                return nextID;
+            }
+        }
+
+        public int ID { get; private set; }
     }
 }

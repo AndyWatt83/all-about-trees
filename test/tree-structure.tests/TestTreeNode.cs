@@ -1,16 +1,26 @@
-﻿using System;
-using System.Text;
-using tree_structures.core;
+using System;
+using Xunit;
+using tree_structure.core;
 
-namespace tree_structures.console
+namespace tree_structure.tests
 {
-    class Program
+    public class UnitTest1
     {
-        static void Main(string[] args)
+        [Fact]
+        public void TestFiltering()
+        {
+            // Arrange
+            var testTree = this.TestData();
+
+            // Act
+
+            // Assert
+
+        }
+
+        private TreeNode<string> TestData()
         {
             var root = new TreeNode<string>("Parent");
-            root.Filters.Add(o => o.Contains("X"));
-
             {
                 var child0 = root.AddChild("Child0");
                 var child1 = root.AddChild("Child1");
@@ -32,28 +42,7 @@ namespace tree_structures.console
                 }
                 var child3 = root.AddChild("Child3");
             }
-
-            foreach(var node in root)
-            {
-                Console.WriteLine($"{GetIndent(node.Level)}{node.NodeData} : {node.FilterResult()}");
-            }
-
-            Console.WriteLine();
-
-            foreach(var node in root)
-            {
-                Console.WriteLine($"{node.NodeData} : {node.ID} : {node.ParentID}");
-            }
-        }
-
-        private static string GetIndent(int level)
-        {
-            var sb = new StringBuilder();
-            for(int i = 0; i < level; i++)
-            {
-                sb.Append("  ");
-            }
-            return sb.ToString();
+            return root;
         }
     }
 }
