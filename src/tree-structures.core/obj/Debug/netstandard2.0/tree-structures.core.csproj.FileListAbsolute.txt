@@ -1,9 +1,0 @@
-c:\Development\tree-structures\src\tree-structures.core\bin\Debug\netstandard2.0\tree-structures.core.deps.json
-c:\Development\tree-structures\src\tree-structures.core\bin\Debug\netstandard2.0\tree-structures.core.dll
-c:\Development\tree-structures\src\tree-structures.core\bin\Debug\netstandard2.0\tree-structures.core.pdb
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.csprojAssemblyReference.cache
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.csproj.CoreCompileInputs.cache
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.AssemblyInfoInputs.cache
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.AssemblyInfo.cs
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.dll
-c:\Development\tree-structures\src\tree-structures.core\obj\Debug\netstandard2.0\tree-structures.core.pdb
