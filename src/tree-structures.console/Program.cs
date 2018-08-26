@@ -15,9 +15,9 @@ namespace tree_structures.console
                 var child0 = root.AddChild("Child0");
                 var child1 = root.AddChild("Child1");
                 {
-                    var child10 = child1.AddChild("Child10");
+                    var child10 = child1.AddChild("XXXChild10");
                     var child11 = child1.AddChild("Child11");
-                    var child12 = child1.AddChild("Child12");
+                    var child12 = child1.AddChild("ZZZChild12");
                     {
                         var child120 = child12.AddChild("Child120");
                         {

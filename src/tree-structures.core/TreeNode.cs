@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace tree_structures.core
 {
-    public class TreeNode<T> : IEnumerable<TreeNode<T>>
+    public class TreeNode<T> : IEnumerable<TreeNode<T>>, IComparable<TreeNode<T>>
     {
         public T NodeData { get; set; }
         public TreeNode<T> Parent { get; set; }
@@ -24,7 +24,7 @@ namespace tree_structures.core
                 }
             }
         }
-        public ICollection<TreeNode<T>> Children {get; set; } = new List<TreeNode<T>>();
+        public List<TreeNode<T>> Children {get; set; } = new List<TreeNode<T>>();
 
         public TreeNode(T nodeData)
         {
@@ -49,6 +49,7 @@ namespace tree_structures.core
         {
             TreeNode<T> childNode = new TreeNode<T>(child) { Parent = this};
             this.Children.Add(childNode);
+            this.Children.Sort();
             return childNode;
         }
 
@@ -85,8 +86,12 @@ namespace tree_structures.core
             return match;
         }
 
-        // ID Code for data binding
+        public int CompareTo(TreeNode<T> other)
+        {
+            return String.Compare(this.NodeData.ToString(), other.NodeData.ToString());
+        }
 
+        // ID Code for data binding
         private static int nextID = -1;
         public static int NextID
         {
