@@ -31,10 +31,5 @@ namespace tree_structures.core
             head = head.next;
             return returnValue;
         }
-
-        public void PushLast(T item)
-        {
-            if head
-        }
     }
 }
