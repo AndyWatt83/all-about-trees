@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tree-structures.core", "src
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{77C502C0-934C-4CF8-B955-59CE47D3E144}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tree-structure.tests", "test\tree-structure.tests\tree-structure.tests.csproj", "{AA6C7E4D-307E-41B8-A5E5-8EF977FA091F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tree-structures.tests", "test\tree-structures.tests\tree-structures.tests.csproj", "{AA6C7E4D-307E-41B8-A5E5-8EF977FA091F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

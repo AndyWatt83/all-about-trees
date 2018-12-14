@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using tree_structure.core;
+using tree_structures.core;
 
-namespace tree_structure.tests
+namespace tree_structures.tests
 {
     public class UnitTest1
     {
