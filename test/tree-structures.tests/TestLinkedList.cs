@@ -7,7 +7,7 @@ namespace tree_structures.tests
     public class TestLinkedList
     {
         [Fact]
-        public void TestAdd()
+        public void TestPush()
         {
             var testLinkedList = new LinkedList<int>();
 
@@ -34,6 +34,25 @@ namespace tree_structures.tests
 
             result = testLinkedList.Pop();
             Assert.True(result == 1);
+        }
+
+        [Fact]
+        public void TestAppend()
+        {
+            var testLinkedList = new LinkedList<int>();
+
+            testLinkedList.Append(1);
+            testLinkedList.Append(2);
+            testLinkedList.Append(3);
+
+            var result = testLinkedList.Pop();
+            Assert.True(result == 1);
+
+            result = testLinkedList.Pop();
+            Assert.True(result == 2);
+
+            result = testLinkedList.Pop();
+            Assert.True(result == 3);
         }
 
         [Fact]

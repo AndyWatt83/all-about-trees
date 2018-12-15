@@ -8,6 +8,17 @@ namespace tree_structures.console
     {
         static void Main(string[] args)
         {
+            var list = new LinkedList<int>();
+            list.Push(1);
+            list.Push(2);
+            list.Push(3);
+            foreach(var i in list)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.ReadLine();
+
             var root = new TreeNode<string>("Parent");
             root.Filters.Add(o => o.Contains("X"));
 
