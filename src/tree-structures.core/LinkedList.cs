@@ -20,14 +20,15 @@ namespace tree_structures.core
             head = new Node<T> { data = item, next = head };
         }
 
-        public T Peek
+        public T Peek()
         {
-            get { return head.data; }
+            if(head == null) return default(T);
+            return head.data;
         }
 
         public T Pop()
         {
-            var returnValue = this.Peek;
+            var returnValue = this.Peek();
             head = head.next;
             return returnValue;
         }
