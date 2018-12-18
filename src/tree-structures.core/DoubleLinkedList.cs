@@ -5,15 +5,15 @@ using System.Linq;
 
 namespace tree_structures.core
 {
-    public class LinkedList<T> : IEnumerable<T>
+    public class DoubleLinkedList<T>
     {
         private Node<T> head;
         private int count;
-
         private class Node<TNode>
         {
             public TNode data;
             public Node<TNode> next;
+            public Node<TNode> previous;
         }
 
         public int Count
@@ -24,6 +24,7 @@ namespace tree_structures.core
         public void Push(T item)
         {
             head = new Node<T> { data = item, next = head };
+            head.next.previous = head;
             count += 1;
         }
 
@@ -39,6 +40,7 @@ namespace tree_structures.core
 
             var returnValue = this.Peek();
             head = head.next;
+            head.previous = null;
             count -= 1;
             return returnValue;
         }
@@ -58,42 +60,9 @@ namespace tree_structures.core
             while (last.next != null) last = last.next;
 
             last.next = newNode;
+            newNode.previous = last;
         }
 
-        public void InsertAfter(T item, int index)
-        {
-            if (index > count) throw new ArgumentOutOfRangeException();
-
-            var newNode = new Node<T> { data = item };
-
-            if (head == null)
-            {
-                head = newNode;
-                return;
-            }
-
-            //TODO
-        }
-
-        private IEnumerator<Node<T>> Nodes()
-        {
-            var last = head;
-            while (last != null) yield return last;
-        }
-
-        public IEnumerator<T> GetEnumerator()
-        {
-            var last = head;
-            while (last != null)
-            {
-                yield return last.data;
-                last = last.next;
-            }
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return this.GetEnumerator();
-        }
     }
+
 }
